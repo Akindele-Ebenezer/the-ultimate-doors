@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    box-shadow: 1px 2px 19px #eee;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section .doors img, section .doors {
+    width: 17rem;
+}
+
+section .doors .doors-img { 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 17rem; 
+}
+
+section .sec-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+section .sec-inner .doors {
+    margin: 1rem;
+}
+
+section .sec-inner .doors .doors-text {
+    margin: .5rem;
+} 
