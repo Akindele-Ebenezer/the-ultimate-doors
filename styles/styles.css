@@ -8,7 +8,47 @@
 
 nav {
     box-shadow: 1px 2px 19px #eee;
+    display: flex;
+    justify-content: space-around;
     padding: 1rem;
+}
+
+nav div:first-child {
+    display: flex;
+    position: relative;
+}
+
+nav div:first-child h1 {
+    background: #fff;
+    height: 2rem;
+    position: relative;
+    transform: translateX(.5rem);
+    z-index: 10;
+}
+
+nav div:first-child h2 {
+    border-radius: .5rem;
+    border: 5px solid #dfdf4d63;
+    height: 3.5rem;
+    position: absolute;
+    transform: translateY(-.4rem);
+    width: 9rem;
+}
+
+nav div img {
+    background: #dfdf4d63;
+    margin-inline: 1rem;
+    padding: .5rem;
+    width: 2.5rem;
+    transform: translateY(.75rem);
+}
+
+nav div p {
+    transform: translateY(-1.2rem);
+}
+
+nav div strong {
+    margin-inline: .5rem;
 }
 
 section {
