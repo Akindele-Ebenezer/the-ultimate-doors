@@ -4,6 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -67,6 +68,7 @@ section.sec-1 {
 section.sec-2 {
     display: flex;
     justify-content: center;
+    padding-bottom: 4rem;
 }
 
 section.sec-2 .doors img, section.sec-2 .doors {
@@ -121,6 +123,7 @@ section.sec-1 .sec-1-inner button {
     border: none;
     border-radius: .2rem;
     color: #fff;
+    cursor: pointer;
     margin-top: 1rem;
     padding: 1.5rem 2rem;
 }
@@ -174,7 +177,8 @@ section.sec-1-sub .sec-1-sub-inner .door div img {
     width: 5rem;
 }
 
-section.sec-2 .sec-inner .doors button {
+section.sec-2 .sec-inner .doors button,
+section.sec-3 .sec-3-inner button {
     background: #222;
     border: none;
     border-radius: .2rem;
@@ -199,8 +203,77 @@ section.sec-3-title {
     text-decoration-style: dashed;
 }
 
+section.sec-3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem;
+}
+
+section.sec-3 .sec-3-inner {
+    background: #fff;
+    border-radius: 2rem;
+    padding-block: 2rem;
+    width: 32rem;
+}
+
+section.sec-3 .sec-3-inner input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: blue;
+    padding: 1rem;
+    margin: 1rem;
+    outline: none;
+    width: 30rem;
+}
+
+section.sec-3 .sec-3-inner input:focus {
+    border-bottom: 3px solid blue;
+}
+
+section.sec-3 .sec-3-inner button {
+    width: 30rem;
+}
+
+section.sec-3 .sec-3-inner button,
+section.sec-3 .sec-3-inner h1,
+section.sec-3 .sec-3-inner label {
+    margin-left: 1rem;
+}
+
+section.sec-3 .sec-3-inner h1 {
+    border-bottom: 3px solid #ff00009e;
+}
+
 @media (min-width: 1072px) {
     section.sec-1 { 
         background-size: contain; 
     }    
+}
+
+@media (max-width: 684px) {
+    section.sec-3 {
+        justify-content: center;
+    } 
+
+    section.sec-3 .sec-3-inner .sec-3-input {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media (max-width: 508px) { 
+    section.sec-3 .sec-3-inner input,
+    section.sec-3 .sec-3-inner button,
+    section.sec-3 .sec-3-inner h1 {
+        width: 95vw; 
+    }
+
+    section.sec-3-title {
+        font-size: xx-large;
+    }
 }
