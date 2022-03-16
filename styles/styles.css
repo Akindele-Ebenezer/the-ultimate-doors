@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     background: #fff;
     box-shadow: 1px 2px 19px #888;
@@ -318,11 +322,15 @@ section.sec-5 .sec-5-inner div textarea {
 section.sec-5 .sec-5-inner .sec-5-inner-wrapper  {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 68rem;
 }
 
 section.sec-5 .sec-5-inner .sec-5-inner-sub {
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     display: flex;
+    padding: 1rem;
 }
 
 section.sec-5 .sec-5-inner .sec-5-inner-sub div {
@@ -331,6 +339,15 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div {
 
 section.sec-5 .sec-5-inner .sec-5-inner-sub div img {
     width: 2rem;
+}
+
+section.sec-5 .sec-5-inner .sec-5-inner-sub:nth-child(2) div img,
+section.sec-5 .sec-5-inner .sec-5-inner-sub:nth-child(3) div img {
+    width: 2.5rem;
+}
+
+section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 1072px) {
@@ -349,6 +366,18 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div img {
         display: flex;
         flex-direction: column;
     } 
+}
+
+@media (max-width: 606px) {
+    section.sec-5 .sec-5-inner .sec-5-inner-wrapper {
+        justify-content: flex-start;
+    }
+
+    section.sec-5 .sec-5-inner .sec-5-inner-sub {
+        border-left: unset;
+        display: block;
+        width: 100%;
+    }
 }
 
 @media (max-width: 508px) { 
