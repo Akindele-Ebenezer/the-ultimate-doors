@@ -193,10 +193,11 @@ section.sec-2  small {
     text-align: center;  
 }
 
-section.sec-3-title {
+section.sec-2-title,
+section.sec-1-sub-title {
     color: #333;
     font-family: verdana;
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 2rem;
     text-align: center;
     text-decoration: overline; 
@@ -211,14 +212,16 @@ section.sec-3 {
     padding: 5rem;
 }
 
-section.sec-3 .sec-3-inner {
+section.sec-3 .sec-3-inner,
+section.sec-5 .sec-5-inner div form {
     background: #fff;
     border-radius: 2rem;
     padding-block: 2rem;
     width: 32rem;
 }
 
-section.sec-3 .sec-3-inner input {
+section.sec-3 .sec-3-inner input,
+section.sec-5 .sec-5-inner div input {
     border: none;
     border-bottom: 1px solid #ddd;
     color: blue;
@@ -232,7 +235,9 @@ section.sec-3 .sec-3-inner input:focus {
     border-bottom: 3px solid blue;
 }
 
-section.sec-3 .sec-3-inner button {
+section.sec-3 .sec-3-inner button,
+section.sec-5 .sec-5-inner div button,
+section.sec-5 .sec-5-inner div textarea {
     width: 30rem;
 }
 
@@ -242,8 +247,90 @@ section.sec-3 .sec-3-inner label {
     margin-left: 1rem;
 }
 
-section.sec-3 .sec-3-inner h1 {
+section.sec-3 .sec-3-inner h1,
+section.sec-5 .sec-5-inner div h1 {
     border-bottom: 3px solid #ff00009e;
+}
+
+section.sec-4 {
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex; 
+    padding: 5rem;
+    height: 100vh;
+}
+
+section.sec-4 .sec-4-inner {
+    width: 35rem;
+}
+ 
+section.sec-4 .sec-4-inner div {
+    background: #dfdf4d63;
+    border-radius: 1rem;
+    padding: 5rem;
+}
+   
+section.sec-4 .sec-4-inner div h2 {
+    font-family: arial;
+    font-size: xxx-large;
+}
+
+section.sec-4 .sec-4-inner div p {
+    margin: 4rem 0 2rem;
+}
+
+section.sec-5 .sec-5-inner {
+    height: 100vh;
+}
+
+section.sec-5 .sec-5-inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section.sec-5 .sec-5-inner div button {
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4rem;
+    border: 2px solid #333;
+    margin-block: 1rem;
+    padding: 1rem;
+}
+ 
+section.sec-5 .sec-5-inner div input {
+    margin-left: 0;
+}
+
+section.sec-5 .sec-5-inner div textarea {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: blue;
+    font-size: smaller;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+}
+
+section.sec-5 .sec-5-inner .sec-5-inner-wrapper  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68rem;
+}
+
+section.sec-5 .sec-5-inner .sec-5-inner-sub {
+    display: flex;
+}
+
+section.sec-5 .sec-5-inner .sec-5-inner-sub div {
+    margin: 1rem;
+} 
+
+section.sec-5 .sec-5-inner .sec-5-inner-sub div img {
+    width: 2rem;
 }
 
 @media (min-width: 1072px) {
@@ -261,19 +348,38 @@ section.sec-3 .sec-3-inner h1 {
         align-items: center;
         display: flex;
         flex-direction: column;
-    }
-
-    
+    } 
 }
 
 @media (max-width: 508px) { 
     section.sec-3 .sec-3-inner input,
     section.sec-3 .sec-3-inner button,
-    section.sec-3 .sec-3-inner h1 {
+    section.sec-3 .sec-3-inner h1,
+    section.sec-5 .sec-5-inner div input,
+    section.sec-5 .sec-5-inner div form,
+    section.sec-5 .sec-5-inner div textarea,
+    section.sec-5 .sec-5-inner div button {
         width: 95vw; 
     }
 
-    section.sec-3-title {
+    section.sec-2-title, 
+    section.sec-1-sub-title {
         font-size: xx-large;
+    }
+}
+
+@media (max-width: 372px) {
+    section.sec-4 {
+        height: unset;
+    }
+    
+    section.sec-4 .sec-4-inner div {
+        padding: 0;
+    }
+}
+
+@media (max-width: 338px) {
+    section.sec-5 .sec-5-inner .sec-5-inner-wrapper {
+        font-size: smaller;
     }
 }
