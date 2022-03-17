@@ -327,8 +327,8 @@ section.sec-5 .sec-5-inner .sec-5-inner-wrapper  {
 }
 
 section.sec-5 .sec-5-inner .sec-5-inner-sub {
-    border-left: 1px solid #ff00009e;
-    border-bottom: 1px solid #ff00009e;
+    border-left: 1px solid #0d0d0d9e;
+    border-bottom: 1px solid #0d0d0d9e;
     display: flex;
     padding: 1rem;
 }
