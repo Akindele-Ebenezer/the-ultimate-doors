@@ -113,8 +113,7 @@ section.sec-2 .sec-inner .doors .doors-text {
 
 section.sec-1 .sec-1-inner {
     align-items: center;
-    background: rgba(0, 0, 0, .4);
-    border-radius: 1rem;
+    background: rgba(0, 0, 0, .4); 
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -348,6 +347,27 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub:nth-child(3) div img {
 
 section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
     margin-bottom: 1rem;
+}
+
+@media (min-width: 1134px) {
+    main {
+        background: #eee;
+        display: flex;
+        justify-content: center;
+    }
+
+    main div.main-inner {
+        background: #fff;
+        width: 83vw;
+    }
+
+    section.sec-1-sub {
+        background: #fdfbfb;
+    }
+
+    section.sec-3 {
+        padding: 5rem 0;
+    }
 }
 
 @media (min-width: 1072px) {
