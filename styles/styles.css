@@ -216,12 +216,11 @@ section.sec-1-sub .sec-1-sub-inner {
 
 section.sec-1-sub .sec-1-sub-inner .door {
     font-size: small;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 section.sec-1-sub .sec-1-sub-inner .door:hover {  
-    border: 7px solid #dfdf4d63;
-    padding: 1rem;
+    border: 7px solid #dfdf4d63; 
     transition: .5s;
 }
 
