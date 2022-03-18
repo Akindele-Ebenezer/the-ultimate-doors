@@ -462,6 +462,12 @@ ul {
     }    
 }
 
+@media (max-width: 900px) {
+    section.sec-1 {
+        background-position: unset;
+    }
+}
+
 @media (max-width: 684px) {
     section.sec-3 {
         justify-content: center;
