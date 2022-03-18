@@ -52,7 +52,8 @@ footer .footer-inner div:first-child {
     width: 20rem;
 }
 
-nav {
+nav,
+.nav-sm-screen {
     background: #fff;
     box-shadow: 1px 2px 19px #888;
     display: flex;
@@ -62,12 +63,14 @@ nav {
     width: 100%;
 }
 
-nav div:first-child {
+nav div:first-child,
+.nav-sm-screen div:first-child {
     display: flex;
     position: relative;
 }
 
-nav div:first-child h1 {
+nav div:first-child h1,
+.nav-sm-screen div:first-child h1 {
     background: #fff;
     height: 2rem;
     position: relative;
@@ -75,7 +78,8 @@ nav div:first-child h1 {
     z-index: 10;
 }
 
-nav div:first-child h2 {
+nav div:first-child h2,
+.nav-sm-screen div:first-child h2 {
     border-radius: .5rem;
     border: 5px solid #dfdf4d63;
     height: 3.5rem;
@@ -84,8 +88,10 @@ nav div:first-child h2 {
     width: 9rem;
 }
 
-nav div img {
+nav div img,
+.nav-sm-screen div img {
     background: #dfdf4d63;
+    cursor: pointer;
     margin-inline: 1rem;
     padding: .5rem;
     width: 2.5rem;
@@ -419,6 +425,30 @@ ul {
 
     section.sec-3 {
         padding: 5rem 0;
+    }
+}
+
+@media (min-width: 810px) {
+    .nav-sm-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    nav {
+        display: none;
+    }
+
+    .nav-sm-screen {
+        justify-content: space-between;
+    }
+
+    .nav-sm-screen div img {
+        transform: translateY(0);
+    }
+
+    .nav-sm-screen h1 {
+        font-size: 1.2rem;
     }
 }
 
