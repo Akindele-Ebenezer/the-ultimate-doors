@@ -12,12 +12,17 @@ a {
     text-decoration: none;
 }
 
+.display {
+    visibility: hidden;
+}
+
 footer .footer-inner {
     background: #111;
     color: #bbb;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    font-size: small;
+    justify-content: space-between;
 }
 
 footer .footer-inner h1,
@@ -412,6 +417,7 @@ section.sec-5 .sec-5-inner div textarea {
 section.sec-5 .sec-5-inner .sec-5-inner-wrapper  {
     display: flex;
     flex-wrap: wrap;
+    font-size: smaller;
     justify-content: center;
     width: 68rem;
 }
