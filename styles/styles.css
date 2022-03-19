@@ -95,7 +95,8 @@ nav div:first-child h2,
 }
 
 nav div img,
-.nav-sm-screen div img {
+.nav-sm-screen div img,
+.nav-toggle img {
     background: #dfdf4d63;
     cursor: pointer;
     margin-inline: 1rem;
@@ -110,6 +111,37 @@ nav div p {
 
 nav div strong {
     margin-inline: .5rem;
+}
+
+.nav-toggle {
+    align-items: center;
+    background: #555;
+    display: flex;
+    font-size: 2rem;
+    height: 100vh;
+    justify-content: center;
+    opacity: .9;
+    position: fixed;
+    width: 100%;
+    transition: 1s;
+    transform: translateY(-100%);
+    z-index: 20;
+}
+
+.nav-toggle a {
+    color: #fff;
+}
+
+.nav-toggle img {
+    position: absolute;
+    right: 3%;
+    top: 1rem;
+    transform: translate(0);
+}
+
+.nav-toggle ul li {
+    margin-block: .5rem;
+    text-align: center;
 }
 
 section.sec-1 {
@@ -206,6 +238,7 @@ section.sec-1-sub {
     background: #eee;
     display: flex;
     justify-content: center; 
+    padding: 1.5rem;
 }
 
 section.sec-1-sub .sec-1-sub-inner {  
@@ -215,12 +248,14 @@ section.sec-1-sub .sec-1-sub-inner {
 }
 
 section.sec-1-sub .sec-1-sub-inner .door {
+    border: 7px solid #eee; 
     font-size: small;
     padding: 2rem;
 }
 
 section.sec-1-sub .sec-1-sub-inner .door:hover {  
-    border: 7px solid #dfdf4d63; 
+    border-color: #dfdf4d63;
+    cursor: pointer;
     transition: .5s;
 }
 
@@ -431,10 +466,19 @@ ul {
     section.sec-1-sub {
         background: #fdfbfb;
     }
+    
+    section.sec-1-sub .sec-1-sub-inner .door {
+        border: 7px solid #fdfbfb;  
+    }
+    
+    section.sec-1-sub .sec-1-sub-inner .door:hover {  
+        border-color: #dfdf4d63; 
+    }
 
     section.sec-3 {
         padding: 5rem 0;
     }
+    
 }
 
 @media (min-width: 810px) {
