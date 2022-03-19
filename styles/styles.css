@@ -64,8 +64,7 @@ main div.main-inner {
 
 nav,
 .nav-sm-screen {
-    background: #fff;
-    box-shadow: 1px 2px 19px #888;
+    background: #fff; 
     display: flex;
     justify-content: space-around;
     padding: 1rem;
@@ -446,6 +445,114 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
     margin-bottom: 1rem;
 }
 
+.supplies-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 2rem;
+}
+
+.supplies-wrapper .supplies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.supplies-wrapper .supplies .supplies-content {
+    margin-block: 1rem;
+}
+
+.supplies-wrapper .supplies .supplies-content div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+.supplies-wrapper .supplies .supplies-content button {
+    background: #222;
+    border: none;
+    border-radius: .2rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .09rem; 
+    padding: 1rem;
+}
+
+.supplies-wrapper .supplies .supplies-content p {
+    color: #333;
+    font-size: small;
+    margin-block: 1rem;
+    text-align: center;
+} 
+
+.supplies-wrapper .supplies-categories {
+    background: #fdfbfb;
+    padding: 2rem;
+    width: 20rem;
+}
+
+.supplies-wrapper .supplies-categories div img {
+    width: 2rem;
+    transform: translate(11rem,.7rem);
+}
+
+.supplies-wrapper .supplies-categories div input {
+    outline: navajowhite;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.supplies-wrapper .supplies-categories div p {
+    padding-block: 2rem;
+    font-size: small;
+    color: #777;
+}
+
+.supplies-wrapper .supplies-categories div ul {
+    padding-block: 2rem;
+}
+
+.supplies-wrapper .supplies-categories div ul li {
+    font-size: small;
+    padding-block: .2rem;
+}
+
+.supplies-wrapper .supplies-categories div ul li img {
+    margin-right: 1rem;
+    transform: translateY(.4rem);
+    width: 1.4rem; 
+}
+
+.supplies-temp { 
+    align-items: center; 
+    background-position: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+}
+
+.supplies-temp .supplies-temp-inner {
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.supplies-temp .supplies-temp-inner div p { 
+    font-size: small;
+    text-align: center;
+    transform: translateY(1rem);
+}
+
+.supplies-temp .supplies-temp-inner div p span {
+    color: #dfdf4d;
+}
+
 ul {
     list-style-type: none;
 }
@@ -544,6 +651,20 @@ ul {
         border-left: unset;
         display: block;
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .supplies-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .supplies-wrapper .supplies-categories {
+        margin-top: 2rem;
+    }
+
+    .supplies-wrapper .supplies-categories div img { 
+        transform: translate(1rem,.7rem);
     }
 }
 
