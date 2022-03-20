@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="interior-front-doors.php">
+                <a href="iron-doors.php">
                     <div class="door">
                         <div>
                             <img src="images/door-3.png">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="interior-front-doors.php">
+                <a href="wooden-doors.php">
                     <div class="door">
                         <div>
                             <img src="images/door-4.png">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="interior-front-doors.php">
+                <a href="fire-rated-doors.php">
                     <div class="door">
                         <div>
                             <img src="images/door-5.png">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="interior-front-doors.php">
+                <a href="swing-doors.php">
                     <div class="door">
                         <div>
                             <img src="images/door-6.png">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="interior-front-doors.php">
+                <a href="commercial-doors.php">
                     <div class="door">
                         <div>
                             <img src="images/door-7.png">

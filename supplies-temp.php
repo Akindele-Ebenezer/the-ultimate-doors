@@ -25,8 +25,7 @@
 
             <div class="supplies-content">
                 <div style="background-image: url(<?= $supplies_image_folder . $supply["1"]; ?>)"></div>
-                <p>$<?= $supply["2"]; ?></p>
-                -
+                <p>$<?= $supply["2"]; ?>.00</p>
                 <br>
                 <center><button type="submit">SELECT OPTION</button></center> 
             </div>
