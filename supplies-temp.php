@@ -36,14 +36,14 @@
     <div class="supplies-categories">
         <div>
             <h2>Categories</h2>
-            <ul>
-                <li><a href=""><img src="images/right-arrow.png"> Interior Front Doors </a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Custom Made Doors</a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Iron Doors</a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Wooden Doors</a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Fire Rated Doors</a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Swing Doors</a> </li>
-                <li><a href=""><img src="images/right-arrow.png"> Commercial Doors</a> </li>
+            <ul> 
+                <li><a href="interior-front-doors.php"><img src="images/right-arrow.png"> Interior Front Doors </a> </li>
+                <li><a href="custom-made-doors.php"><img src="images/right-arrow.png"> Custom Made Doors</a> </li>
+                <li><a href="iron-doors.php"><img src="images/right-arrow.png"> Iron Doors</a> </li>
+                <li><a href="wooden-doors.php"><img src="images/right-arrow.png"> Wooden Doors</a> </li>
+                <li><a href="fire-rated-doors.php"><img src="images/right-arrow.png"> Fire Rated Doors</a> </li>
+                <li><a href="swing-doors.php"><img src="images/right-arrow.png"> Swing Doors</a> </li>
+                <li><a href="commercial-doors.php"><img src="images/right-arrow.png"> Commercial Doors</a> </li>
             </ul>
 
             <h2>Search</h2>

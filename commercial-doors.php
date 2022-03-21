@@ -10,6 +10,7 @@
     $supplies_temp_title = "Commercial Doors";
     $supplies_temp_sub_title = $supplies_temp_title;
  
+    $page_title = $supplies_temp_title;
     include 'supplies-temp.php';
 
 ?>

@@ -14,13 +14,13 @@
             <h2>Tags</h2>
             <br>
             <ul>
-                <li>Interior Front Door</li>
-                <li>Custom Made Doors</li>
-                <li>Iron Doors</li>
-                <li>Wooden Doors</li>
-                <li>Fire Rated Doors</li>
-                <li>Swing Doors</li>
-                <li>Commercial Doors</li>
+                <li><a href="interior-front-doors.php">Interior Front Door</a></li>
+                <li><a href="custom-made-doors.php">Custom Made Doors</a></li>
+                <li><a href="iron-doors.php">Iron Doors</a></li>
+                <li><a href="wooden-doors.php">Wooden Doors</a></li>
+                <li><a href="fire-rated-doors.php">Fire Rated Doors</a></li>
+                <li><a href="swing-doors.php">Swing Doors</a></li>
+                <li><a href="commercial-doors.php">Commercial Doors</a></li>
             </ul>
         </div>
         <div>

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <link rel="shortcut icon" href="images/custom-made-doors.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
@@ -12,18 +12,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE ULTIMATE DOORS</title> 
+    <title><?= $page_title; ?></title> 
 </head>
 <body>
 
 <div class="nav-toggle">
     <img src="images/close.png">
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Supplies</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Bookings</a></li>
+        <li><a>Home</a></li>
+        <li><a>Supplies</a></li>
+        <li><a>Services</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Bookings</a></li>
     </ul>
 </div>
 <nav>

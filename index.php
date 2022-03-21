@@ -1,5 +1,6 @@
 <?php
 
+    $page_title = "THE ULTIMATE DOORS";
     include "header.php";
 
 ?>
@@ -10,12 +11,12 @@
                 <div>
                     <h4>SERVICE YOU CAN TRUST</h4>
                     <h1>THE ULTIMATE DOORS</h1> 
-                    <center><a href="#book-now"><button>BOOK ONLINE</button></a></center>
+                    <center><a href="#bookings"><button>BOOK ONLINE</button></a></center>
                 </div>
             </div>
         </section> 
 
-        <section class="sec-1-sub">
+        <section class="sec-1-sub" id="supplies">
             <div class="sec-1-sub-inner">
                 <a href="interior-front-doors.php"> 
                         <div class="door">
@@ -90,7 +91,7 @@
             </div>
         </section>
 
-        <section class="sec-2-title">Our Services</section>
+        <section class="sec-2-title" id="services">Our Services</section>
 
         <section class="sec-2">
             <div class="sec-inner">
@@ -156,7 +157,7 @@
             </div>
         </section>
 
-        <section class="sec-3" style="background-image: url('images/bg.jpg')" id="book-now">
+        <section class="sec-3" style="background-image: url('images/bg.jpg')" id="bookings">
             <div class="sec-3-inner">
                 <form action="" method="post">
                     <h1>BOOK NOW</h1>
@@ -200,7 +201,7 @@
             </div>
         </section>
 
-        <section class="sec-5">
+        <section class="sec-5" id="contact">
             <div class="sec-5-inner">
                 <div>
                     <form action="" method="post">
