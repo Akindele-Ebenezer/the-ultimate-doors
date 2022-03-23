@@ -195,6 +195,13 @@ nav div strong {
 .recommended-products-wrapper .recommended-products-inner .recommended-products-content-wrapper,
 .more-products-wrapper .more-products-inner .more-products-content-wrapper {
     display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+.recommended-products-wrapper .recommended-products-inner .recommended-products-content-wrapper .recommended-products-content ,
+.more-products-wrapper .more-products-inner .more-products-content-wrapper .more-products-content {
+    margin-inline: 1rem;
 }
 
 .recommended-products-wrapper .recommended-products-inner div .recommended-products-content div,
@@ -208,6 +215,7 @@ nav div strong {
 
 .recommended-products-wrapper .recommended-products-inner div .recommended-products-content p,
 .more-products-wrapper .more-products-inner div .more-products-content p {
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -676,12 +684,20 @@ ul {
 .view-products-inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .view-products-wrapper .view-products-inner div:first-child {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 30rem; 
     margin: 2rem;
     width: 50rem;
+}
+
+.view-products-wrapper .view-products-inner div p {
+    margin-block: 1rem;
 }
 
 @media (max-width: 1583px) {
