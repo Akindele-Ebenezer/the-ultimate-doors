@@ -38,11 +38,11 @@ for (let i = 0; i < navUlChildren.length; i++) {
         for (let i = 0; i < navUlChildrenAnchorTags.length; i++) {
 
             if(navUlChildrenAttributes === 'home') { 
-                navUlChildrenAnchorTags[i].setAttribute('href', 'https://ultimatedoorsncabinets.com/the-ultimate-doors/#'); 
+                navUlChildrenAnchorTags[i].setAttribute('href', 'https://ultimatedoorsncabinets.com/#'); 
                 break;
             }
 
-            navUlChildrenAnchorTags[i].setAttribute('href', 'https://ultimatedoorsncabinets.com/the-ultimate-doors/#' + navUlChildrenAttributes); 
+            navUlChildrenAnchorTags[i].setAttribute('href', 'https://ultimatedoorsncabinets.com/#' + navUlChildrenAttributes); 
         } 
     });  
 
