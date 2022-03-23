@@ -66,6 +66,11 @@ main div.main-inner {
     overflow: hidden;
 }
 
+.more-products-wrapper,
+.recommended-products-wrapper {
+    padding: 2rem;
+}
+
 nav,
 .nav-sm-screen {
     background: #fff; 
@@ -124,6 +129,12 @@ nav div:first-child .logo-sub {
 
 nav div:last-child {
     height: 3rem;
+}
+
+nav div .logo-sub span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: .2rem;
 }
 
 .nav-sm-screen  div:first-child .logo-sub-sm-screen {
@@ -199,6 +210,7 @@ nav div strong {
 .recommended-products-title,
 .more-products-title {
     margin-block: 2rem;
+    padding: 2rem;
 }
 
 section.sec-1 {
@@ -464,7 +476,9 @@ section.sec-5 .sec-5-inner {
 }
 
 section.sec-5 .sec-5-inner div button,
-.supplies-wrapper .supplies .supplies-content button {
+.supplies-wrapper .supplies .supplies-content button,
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button,
+.more-products-wrapper .more-products-inner div .more-products-content button {
     background: #fff;
     cursor: pointer;
     border-radius: 4rem;
@@ -473,13 +487,17 @@ section.sec-5 .sec-5-inner div button,
     padding: 1rem;
 }
   
-.supplies-wrapper .supplies .supplies-content button { 
+.supplies-wrapper .supplies .supplies-content button,
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button,
+.more-products-wrapper .more-products-inner div .more-products-content button { 
     border: 3px solid #333;
     border-radius: 0;
 }
  
 section.sec-5 .sec-5-inner div button:hover,
-.supplies-wrapper .supplies .supplies-content button:hover {
+.supplies-wrapper .supplies .supplies-content button:hover,
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button:hover,
+.more-products-wrapper .more-products-inner div .more-products-content button:hover {
     background-color: #111;
     color: #fff;
     border: 2px solid #111;
@@ -559,8 +577,7 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
     width: 15rem;
 }
 
-.view-products-wrapper .view-products-inner div p button,
-.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button {
+.view-products-wrapper .view-products-inner div p button {
     background: #222;
     border: none;
     border-radius: .2rem;
@@ -659,6 +676,7 @@ ul {
 
 .view-products-wrapper .view-products-inner div:first-child {
     height: 30rem; 
+    margin: 2rem;
     width: 50rem;
 }
 
