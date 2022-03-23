@@ -1,56 +1,44 @@
 <?php
 
-    $select_query = $_POST['select_query'];
+// $page_title = $recommended_products_folder;
 
-    $recommended_products = $select_query;
-    $recommended_products_folder = ucwords(str_replace('_', ' ', $recommended_products)); 
-
-    $page_title = $recommended_products_folder;
-
-    include "header.php";
+include "header.php";
 
 
-    $recommended_products = $select_query;
-    $recommended_products_folder = str_replace('_', '-', $recommended_products); 
 
-    $recommended_products_sql = "SELECT * FROM $recommended_products;";
-    $recommended_products_query = mysqli_query($conn, $recommended_products_sql);
-    $recommended_products_result = mysqli_fetch_all($recommended_products_query);
-
-    $more_products = "commercial_doors";
-    $more_products_folder = str_replace('_', '-', $more_products); 
-
-    $more_products_sql = "SELECT * FROM $more_products;";
-    $more_products_query = mysqli_query($conn, $more_products_sql);
-    $more_products_result = mysqli_fetch_all($more_products_query);
-    
-    if(isset($_POST['view_products_submit'])) {
-
-        $product_id = $_POST['product_id'];
+if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_submit'])) { 
         
-        $view_product_sql = "SELECT * FROM $select_query WHERE id = $product_id;";
-        $view_product_query = mysqli_query($conn, $view_product_sql);
-        $view_product_result = mysqli_fetch_all($view_product_query);
- 
-        $view_product = str_replace('_', '-', $select_query);
-         
+            // $select_query = $_POST['select_query'];
+        
+            // $recommended_products = $select_query;
+            // $recommended_products_folder = ucwords(str_replace('_', ' ', $recommended_products)); 
+            
+            $product_id = $_POST['product_id']; 
+            $table_name = str_replace('-', '_', $_POST['table_name']);
+            $recommended_products_folder = str_replace('_', '-', $_POST['table_name']);
+            
+            $view_product_sql = "SELECT * FROM $table_name WHERE id = $product_id;";
+            $view_product_query = mysqli_query($conn, $view_product_sql);
+            $view_product_result = mysqli_fetch_all($view_product_query);
+            
+            $view_product = str_replace('_', '-', $select_query);
+            
+            $recommended_products = $table_name; 
+            
+            $recommended_products_sql = "SELECT * FROM $recommended_products;";
+            $recommended_products_query = mysqli_query($conn, $recommended_products_sql);
+            $recommended_products_result = mysqli_fetch_all($recommended_products_query);
+            
+
+            $more_products = "commercial_doors";
+            $more_products_folder = str_replace('_', '-', $more_products); 
+            
+            $more_products_sql = "SELECT * FROM $more_products;";
+            $more_products_query = mysqli_query($conn, $more_products_sql);
+            $more_products_result = mysqli_fetch_all($more_products_query);
+            
+// print_r($view_product_result);
     }
-
-//     if(isset($_POST['more_products_submit'])) { 
-
-//         $product_id = $_POST['product_id']; 
-//         $table_name = str_replace('-', '_', $_POST['table_name']);
-//         $recommended_products_folder = str_replace('_', '-', $_POST['table_name']);
-//         // echo $recommended_products_folder;
-
-//         // $view_product_sql = "SELECT * FROM $table_name WHERE id = $product_id;";
-//         // $view_product_query = mysqli_query($conn, $view_product_sql);
-//         // $view_product_result = mysqli_fetch_all($view_product_query);
-
-//         // $view_product = str_replace('_', '-', $select_query);
-
-// // print_r($view_product_result);
-//     }
  
 ?>
 
@@ -58,10 +46,10 @@
         <div class="view-products-inner">
             <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $view_product_result['0']['1']; ?>)"></div>
             <div>
-                <h2><?= $view_product_result['0']['3']; ?></h2>
-                <br> 
-                <span><?= $view_product_result['0']['2']; ?></span>
-                <p> <?= $view_product_result['0']['4']; ?></p> 
+                <h2>Product Name</h2>
+                <br>
+                <p>Price: $390</p>
+                <p>Product Description</p> 
                 <p><button>Continue Shopping</button></p>
             </div>
         </div>
@@ -73,7 +61,7 @@
         <div class="recommended-products-inner">
             <div class="recommended-products-content-wrapper"> 
 
-                <?php foreach($recommended_products_result as $recommended_products): ?> 
+            <?php foreach($recommended_products_result as $recommended_products): ?> 
                     <form action="view-more-products.php" method="post"> 
 
                         <div class="recommended-products-content">
@@ -100,7 +88,7 @@
             <div class="more-products-content-wrapper"> 
 
                 <?php foreach($more_products_result as $more_products): ?>
-                    <form action="view-more-products.php" method="post"> 
+                    <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post"> 
                     <!--  -->
                         <div class="more-products-content">
                             <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['1']; ?>)"></div>

@@ -26,11 +26,11 @@
             <form action="view-products-temp.php" method="post">
                 <div class="supplies-content">
                     <div style="background-image: url(<?= $supplies_image_folder . $supply["1"]; ?>)"></div>
-                    <p>$<?= $supply["2"]; ?>.00</p>
+                    <p><?= $supply["2"]; ?></p>
                     <input type="hidden" name="select_query" value="<?= $select_query; ?>">
                     <input type="hidden" name="product_id" value="<?= $supply["0"]; ?>">
                     <br>
-                    <center><button type="submit" name="submit">ADD TO CART</button></center> 
+                    <center><button type="submit" name="view_products_submit">ADD TO CART</button></center> 
                 </div>
             </form>
 

@@ -194,8 +194,7 @@ nav div strong {
  
 .recommended-products-wrapper .recommended-products-inner .recommended-products-content-wrapper,
 .more-products-wrapper .more-products-inner .more-products-content-wrapper {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; 
     overflow: scroll;
 }
 
@@ -684,19 +683,24 @@ ul {
 .view-products-inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.view-products-wrapper .view-products-inner div:first-child {
-    background-position: center;
+.view-products-wrapper .view-products-inner div:first-child { 
     background-size: contain;
     background-repeat: no-repeat;
     height: 30rem; 
     margin: 2rem;
-    width: 50rem;
+    width: 20rem;
+}
+
+.view-products-wrapper .view-products-inner div:last-child {
+    padding: 2rem;
+    width: 30rem;
 }
 
 .view-products-wrapper .view-products-inner div p {
+    font-size: small;
     margin-block: 1rem;
 }
 
