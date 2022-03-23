@@ -150,6 +150,10 @@ nav div p {
     transform: translateY(-1.2rem);
 }
 
+nav div p small a {
+    visibility: hidden;
+}
+
 nav div strong {
     margin-inline: .5rem;
 }
