@@ -33,7 +33,7 @@
         <div class="logo-sub">AND <span>CABINETS</span></div>
     </div>
     <div>
-        <p><small><strong>Call Us</strong> <a href="tel:+5166733208">5166733208</a>, <a href="tel:+8327743563">8327743563</a><img src="images/nav-icon.png"></small></p> 
+        <p><small><strong>Call Us : </strong> <a href="tel:+5166733208">5166733208</a> <a href="tel:+8327743563">8327743563</a><img src="images/nav-icon.png"></small></p> 
         <p><small><strong>Toll Free Number</strong> 1800 909 8413</small></p>   
     </div>  
 </nav>  
