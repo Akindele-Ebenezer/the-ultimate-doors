@@ -30,15 +30,18 @@
     <div>
         <h2></h2>
         <h1>THE ULTIMATE DOORS</h1>
+        <div class="logo-sub">AND CABINETS</div>
     </div>
     <div>
-        <p><small><strong>Call Us</strong> <a href="tel:+5166733208">5166733208</a>, <a href="tel:+8327743563">8327743563</a><img src="images/nav-icon.png"></small></p>    
+        <p><small><strong>Call Us</strong> <a href="tel:+5166733208">5166733208</a>, <a href="tel:+8327743563">8327743563</a><img src="images/nav-icon.png"></small></p> 
+        <p><small><strong>Toll Free Number</strong> 1800 909 8413</small></p>   
     </div>  
 </nav>  
 <div class="nav-sm-screen">
     <div>
         <h2></h2>
         <h1>THE ULTIMATE DOORS</h1>
+        <div class="logo-sub-sm-screen">AND CABINETS</div>
     </div>
     <div>
         <img src="images/nav-icon.png">

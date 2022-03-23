@@ -110,7 +110,29 @@ nav div img,
     margin-inline: 1rem;
     padding: .5rem;
     width: 2.5rem;
-    transform: translateY(.75rem);
+    transform: translateY(1.5rem);
+}
+
+nav div:first-child .logo-sub {
+    position: relative;
+    z-index: 10;
+    top: 1.5rem;
+    font-size: small;
+    right: 16.9rem;
+    font-style: italic;
+  }
+
+nav div:last-child {
+    height: 3rem;
+}
+
+.nav-sm-screen  div:first-child .logo-sub-sm-screen {
+    font-size: small;
+    font-style: italic;
+    left: .6rem;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 10;
 }
 
 nav div p {
@@ -155,6 +177,30 @@ nav div strong {
     text-align: center;
 }
  
+.recommended-products-wrapper .recommended-products-inner .recommended-products-content-wrapper,
+.more-products-wrapper .more-products-inner .more-products-content-wrapper {
+    display: flex;
+}
+
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content div,
+.more-products-wrapper .more-products-inner div .more-products-content div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10rem;
+    width: 10rem;
+}
+
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content p,
+.more-products-wrapper .more-products-inner div .more-products-content p {
+    text-align: center;
+}
+
+.recommended-products-title,
+.more-products-title {
+    margin-block: 2rem;
+}
+
 section.sec-1 {
     align-items: center;
     background-position: bottom;
@@ -168,7 +214,9 @@ section.sec-1 {
 section.sec-1 .sec-1-inner div center a button:hover,
 section.sec-3 .sec-3-inner form button:hover,
 footer .footer-inner div ul li:hover,
-.supplies-wrapper .supplies .supplies-content button:hover {
+.view-products-wrapper .view-products-inner div p button:hover,
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button:hover,
+.more-products-wrapper .more-products-inner div .more-products-content button:hover {
     background-color: #dfdf4d63;
     color: #111;
     opacity: 1;
@@ -247,13 +295,20 @@ section.sec-1 .sec-1-inner h1 {
 section.sec-1 .sec-1-inner h4 {
     color: #fff; 
     letter-spacing: .05rem;
-    margin-bottom: 1rem;
-    text-align: right;
+    margin-bottom: 1rem; 
     text-decoration: underline; 
     text-decoration-color: #dfdf4d63;
     text-decoration-style: dashed;
 }
  
+section.sec-1 .sec-1-inner p {
+    font-size: large;
+    color: #fff;
+    text-align: right;
+    font-style: italic;
+    transform: translateY(-1rem);
+  }
+
 section.sec-1-sub {
     align-items: center;
     background: #eee;
@@ -408,7 +463,8 @@ section.sec-5 .sec-5-inner {
     justify-content: space-around;
 }
 
-section.sec-5 .sec-5-inner div button {
+section.sec-5 .sec-5-inner div button,
+.supplies-wrapper .supplies .supplies-content button {
     background: #fff;
     cursor: pointer;
     border-radius: 4rem;
@@ -416,10 +472,17 @@ section.sec-5 .sec-5-inner div button {
     margin-block: 1rem;
     padding: 1rem;
 }
+  
+.supplies-wrapper .supplies .supplies-content button { 
+    border: 3px solid #333;
+    border-radius: 0;
+}
  
-section.sec-5 .sec-5-inner div button:hover {
+section.sec-5 .sec-5-inner div button:hover,
+.supplies-wrapper .supplies .supplies-content button:hover {
     background-color: #111;
     color: #fff;
+    border: 2px solid #111;
     transition: .5s;
 }
 
@@ -496,7 +559,8 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
     width: 15rem;
 }
 
-.supplies-wrapper .supplies .supplies-content button {
+.view-products-wrapper .view-products-inner div p button,
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content button {
     background: #222;
     border: none;
     border-radius: .2rem;
@@ -582,6 +646,20 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
 
 ul {
     list-style-type: none;
+}
+
+.view-products-wrapper {
+    margin-top: 7rem;
+}
+
+.view-products-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.view-products-wrapper .view-products-inner div:first-child {
+    height: 30rem; 
+    width: 50rem;
 }
 
 @media (max-width: 1583px) {
@@ -731,5 +809,12 @@ ul {
 @media (max-width: 338px) {
     section.sec-5 .sec-5-inner .sec-5-inner-wrapper {
         font-size: smaller;
+    }
+}
+
+@media (max-width: 329px) {
+    .nav-sm-screen div:first-child .logo-sub-sm-screen {
+        left: 5.6rem;
+        top: 1.5rem;
     }
 }

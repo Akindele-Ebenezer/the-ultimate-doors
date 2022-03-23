@@ -27,7 +27,7 @@
                 <div style="background-image: url(<?= $supplies_image_folder . $supply["1"]; ?>)"></div>
                 <p>$<?= $supply["2"]; ?>.00</p>
                 <br>
-                <center><button type="submit">SELECT OPTION</button></center> 
+                <center><button type="submit">ADD TO CART</button></center> 
             </div>
         <?php  endforeach; ?>
 

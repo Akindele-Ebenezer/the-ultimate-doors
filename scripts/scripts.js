@@ -38,11 +38,11 @@ for (let i = 0; i < navUlChildren.length; i++) {
         for (let i = 0; i < navUlChildrenAnchorTags.length; i++) {
 
             if(navUlChildrenAttributes === 'home') { 
-                navUlChildrenAnchorTags[i].setAttribute('href', 'https://the-ultimate-doors.herokuapp.com/#'); 
+                navUlChildrenAnchorTags[i].setAttribute('href', 'http://localhost/the-ultimate-doors/#'); 
                 break;
             }
 
-            navUlChildrenAnchorTags[i].setAttribute('href', 'https://the-ultimate-doors.herokuapp.com/#' + navUlChildrenAttributes); 
+            navUlChildrenAnchorTags[i].setAttribute('href', 'http://localhost/the-ultimate-doors/#' + navUlChildrenAttributes); 
         } 
     });  
 
