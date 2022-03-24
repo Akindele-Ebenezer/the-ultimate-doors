@@ -4,8 +4,8 @@
     
     $sql = "SELECT * FROM $select_query;";
     $query = mysqli_query($conn, $sql);
-    $result = mysqli_fetch_all($query);
-
+    $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
+ 
 ?>
 
 <div class="supplies-temp" style="background-image: url(<?= $supplies_sub_title_background_image; ?>)">
@@ -25,10 +25,10 @@
 
             <form action="view-products-temp.php" method="post">
                 <div class="supplies-content">
-                    <div style="background-image: url(<?= $supplies_image_folder . $supply["1"]; ?>)"></div>
-                    <p><?= $supply["2"]; ?></p>
+                    <div style="background-image: url(<?= $supplies_image_folder . $supply["images"]; ?>)"></div>
+                    <p><?= $supply["price"]; ?></p>
                     <input type="hidden" name="select_query" value="<?= $select_query; ?>">
-                    <input type="hidden" name="product_id" value="<?= $supply["0"]; ?>">
+                    <input type="hidden" name="product_id" value="<?= $supply["id"]; ?>">
                     <br>
                     <center><button type="submit" name="view_products_submit">ADD TO CART</button></center> 
                 </div>

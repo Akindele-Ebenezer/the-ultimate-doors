@@ -19,7 +19,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
             
             $view_product_sql = "SELECT * FROM $table_name WHERE id = $product_id;";
             $view_product_query = mysqli_query($conn, $view_product_sql);
-            $view_product_result = mysqli_fetch_all($view_product_query);
+            $view_product_result = mysqli_fetch_all($view_product_query, MYSQLI_ASSOC);
             
             $view_product = str_replace('_', '-', $select_query);
             
@@ -27,7 +27,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
             
             $recommended_products_sql = "SELECT * FROM $recommended_products;";
             $recommended_products_query = mysqli_query($conn, $recommended_products_sql);
-            $recommended_products_result = mysqli_fetch_all($recommended_products_query);
+            $recommended_products_result = mysqli_fetch_all($recommended_products_query, MYSQLI_ASSOC);
             
 
             $more_products = "commercial_doors";
@@ -35,7 +35,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
             
             $more_products_sql = "SELECT * FROM $more_products;";
             $more_products_query = mysqli_query($conn, $more_products_sql);
-            $more_products_result = mysqli_fetch_all($more_products_query);
+            $more_products_result = mysqli_fetch_all($more_products_query, MYSQLI_ASSOC);
             
 // print_r($view_product_result);
     }
@@ -44,12 +44,12 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
 
     <div class="view-products-wrapper">
         <div class="view-products-inner">
-            <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $view_product_result['0']['1']; ?>)"></div>
+            <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $view_product_result['0']['images']; ?>)"></div>
             <div>
-                <h2>Product Name</h2>
+                <h2><?= $view_product_result['0']['name_of_product']; ?></h2>
                 <br>
-                <p>Price: $390</p>
-                <p>Product Description</p> 
+                <p><?= $view_product_result['0']['price']; ?></p>
+                <p><?= $view_product_result['0']['content']; ?></p> 
                 <p><button>Continue Shopping</button></p>
             </div>
         </div>
@@ -65,12 +65,12 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
                     <form action="view-more-products.php" method="post"> 
 
                         <div class="recommended-products-content">
-                            <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $recommended_products['1']; ?>)"></div>
+                            <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $recommended_products['images']; ?>)"></div>
                             <p>$364.00</p>
                             <input type="hidden" name="table_name" value="<?= $recommended_products_folder; ?>">
-                            <input type="hidden" name="product_id" value="<?= $recommended_products[0]; ?>">
+                            <input type="hidden" name="product_id" value="<?= $recommended_products['id']; ?>">
                             <br>
-                            <center><button type="submit" name="recommended_products_submit">ADD TO CART</button></center> 
+                            <center><button type="submit" name="recommended_products_submit">ON SALE</button></center> 
                         </div>
 
                     </form>
@@ -91,12 +91,12 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
                     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post"> 
                     <!--  -->
                         <div class="more-products-content">
-                            <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['1']; ?>)"></div>
+                            <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['images']; ?>)"></div>
                             <p>$364.00</p>
                             <input type="hidden" name="table_name" value="<?= $more_products_folder; ?>">
-                            <input type="hidden" name="product_id" value="<?= $more_products[0]; ?>">
+                            <input type="hidden" name="product_id" value="<?= $more_products['id']; ?>">
                             <br>
-                            <center><button type="submit" name="more_products_submit">ADD TO CART</button></center> 
+                            <center><button type="submit" name="more_products_submit">ON SALE</button></center> 
                         </div> 
                     <!--  -->
                     </form>
