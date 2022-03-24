@@ -25,6 +25,11 @@
 
             <form action="view-products-temp.php" method="post">
                 <div class="supplies-content">
+                    <p>
+                        <?php $str = substr($supply['name_of_product'], 0, 35) . "..."; 
+                            echo wordwrap($str, 15, "<br>\n"); 
+                        ?>
+                    </p>
                     <div style="background-image: url(<?= $supplies_image_folder . $supply["images"]; ?>)"></div>
                     <p><big><?= $supply["price"]; ?></big></p>
                     <input type="hidden" name="select_query" value="<?= $select_query; ?>">

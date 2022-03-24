@@ -76,6 +76,8 @@
                     <form action="view-more-products.php" method="post"> 
 
                         <div class="recommended-products-content">
+                            <p><?= substr($recommended_products['name_of_product'], 0, 25) . "..."; ?></p>
+                            <br> 
                             <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $recommended_products['images']; ?>)"></div>
                             <p><?= $recommended_products['price']; ?></p> 
                             <input type="hidden" name="table_name" value="<?= $recommended_products_folder; ?>">
@@ -102,6 +104,8 @@
                     <form action="view-more-products.php" method="post"> 
                     <!--  -->
                         <div class="more-products-content">
+                            <p><?= substr($more_products['name_of_product'], 0, 25) . "..."; ?></p>
+                            <br> 
                             <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['images']; ?>)"></div>                                                       
                             <p><?= $more_products['price']; ?></p> 
                             <input type="hidden" name="table_name" value="<?= $more_products_folder; ?>">

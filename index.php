@@ -2,6 +2,22 @@
 
     $page_title = "THE ULTIMATE DOORS";
     include "header.php";
+    
+    $recommended_products = "commercial-doors";
+    $recommended_products_folder = $recommended_products; 
+    $recommended_products = str_replace('-', '_', $recommended_products); 
+
+    $recommended_products_sql = "SELECT * FROM $recommended_products;";
+    $recommended_products_query = mysqli_query($conn, $recommended_products_sql);
+    $recommended_products_result = mysqli_fetch_all($recommended_products_query, MYSQLI_ASSOC);
+
+    $more_products = "interior-front-doors"; 
+    $more_products_folder = $more_products; 
+    $more_products = str_replace('-', '_', $more_products); 
+
+    $more_products_sql = "SELECT * FROM $more_products;";
+    $more_products_query = mysqli_query($conn, $more_products_sql);
+    $more_products_result = mysqli_fetch_all($more_products_query, MYSQLI_ASSOC);
 
 ?>
 
@@ -16,6 +32,34 @@
                 </div>
             </div>
         </section> 
+
+        <div class="recommended-products-title"><h2>Recommended Products</h2></div>
+
+        <div class="recommended-products-wrapper">
+        <div class="recommended-products-inner">
+            <div class="recommended-products-content-wrapper"> 
+
+                <?php foreach($recommended_products_result as $recommended_products): ?> 
+                    <form action="view-more-products.php" method="post"> 
+
+                        <div class="recommended-products-content">
+                            <p><?= substr($recommended_products['name_of_product'], 0, 25) . "..."; ?></p>
+                            <br> 
+                            <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $recommended_products['images']; ?>)"></div>
+                            <p><?= $recommended_products['price']; ?></p> 
+                            <input type="hidden" name="table_name" value="<?= $recommended_products_folder; ?>">
+                            <input type="hidden" name="product_id" value="<?= $recommended_products['id']; ?>">
+                            <br>
+                            <center><button type="submit" name="recommended_products_submit">CHECKOUT</button></center> 
+                        </div>
+
+                    </form>
+
+                <?php endforeach; ?>
+                
+            </div> 
+        </div>
+    </div>
 
         <section class="sec-1-sub" id="supplies">
             <div class="sec-1-sub-inner">
@@ -157,6 +201,34 @@
                 </div>
             </div>
         </section>
+
+    <div class="more-products-title"><h2>More Products</h2></div>
+
+    <div class="more-products-wrapper">
+        <div class="more-products-inner">
+            <div class="more-products-content-wrapper"> 
+
+                <?php foreach($more_products_result as $more_products): ?>
+                    <form action="view-more-products.php" method="post"> 
+                    <!--  -->
+                        <div class="more-products-content">
+                            <p><?= substr($more_products['name_of_product'], 0, 25) . "..."; ?></p>
+                            <br> 
+                            <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['images']; ?>)"></div>                                                       
+                            <p><?= $more_products['price']; ?></p> 
+                            <input type="hidden" name="table_name" value="<?= $more_products_folder; ?>">
+                            <input type="hidden" name="product_id" value="<?= $more_products['id']; ?>">
+                            <br>
+                            <center><button type="submit" name="more_products_submit">CHECKOUT</button></center> 
+                        </div> 
+                    <!--  -->
+                    </form>
+
+                <?php endforeach; ?>
+
+            </div>
+        </div>
+    </div>
 
         <section class="sec-3" style="background-image: url('images/bg.jpg')" id="bookings">
             <div class="sec-3-inner">

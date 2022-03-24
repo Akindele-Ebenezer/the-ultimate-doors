@@ -212,6 +212,11 @@ nav div strong {
     width: 10rem;
 }
 
+.recommended-products-wrapper .recommended-products-inner div .recommended-products-content p:first-child,
+.more-products-wrapper .more-products-inner div .more-products-content p:first-child {
+    font-size: small;
+}
+
 .recommended-products-wrapper .recommended-products-inner div .recommended-products-content p,
 .more-products-wrapper .more-products-inner div .more-products-content p {
     margin-top: 1rem;
