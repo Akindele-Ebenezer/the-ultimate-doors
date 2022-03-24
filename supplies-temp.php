@@ -26,7 +26,7 @@
             <form action="view-products-temp.php" method="post">
                 <div class="supplies-content">
                     <div style="background-image: url(<?= $supplies_image_folder . $supply["images"]; ?>)"></div>
-                    <p><?= $supply["price"]; ?></p>
+                    <p><big><?= $supply["price"]; ?></big></p>
                     <input type="hidden" name="select_query" value="<?= $select_query; ?>">
                     <input type="hidden" name="product_id" value="<?= $supply["id"]; ?>">
                     <br>

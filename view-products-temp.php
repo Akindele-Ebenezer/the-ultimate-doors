@@ -34,8 +34,7 @@
  
         $view_product = str_replace('_', '-', $select_query);
          
-    }
-print_r($view_product_result);
+    } 
 //     if(isset($_POST['more_products_submit'])) { 
 
 //         $product_id = $_POST['product_id']; 
@@ -60,8 +59,8 @@ print_r($view_product_result);
             <div>
                 <h2><?= $view_product_result['0']['name_of_product']; ?></h2>
                 <br> 
-                <span><?= $view_product_result['0']['price']; ?></span>
                 <p> <?= $view_product_result['0']['content']; ?></p> 
+                <span><big><?= $view_product_result['0']['price']; ?></big></span>
                 <p><button>Continue Shopping</button></p>
             </div>
         </div>
@@ -78,7 +77,7 @@ print_r($view_product_result);
 
                         <div class="recommended-products-content">
                             <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $recommended_products['images']; ?>)"></div>
-                            <p>$364.00</p>
+                            <p><?= $recommended_products['price']; ?></p> 
                             <input type="hidden" name="table_name" value="<?= $recommended_products_folder; ?>">
                             <input type="hidden" name="product_id" value="<?= $recommended_products['id']; ?>">
                             <br>
@@ -103,8 +102,8 @@ print_r($view_product_result);
                     <form action="view-more-products.php" method="post"> 
                     <!--  -->
                         <div class="more-products-content">
-                            <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['images']; ?>)"></div>
-                            <p>$364.00</p>
+                            <div style="background-image: url(images/<?= $more_products_folder . '/' . $more_products['images']; ?>)"></div>                                                       
+                            <p><?= $more_products['price']; ?></p> 
                             <input type="hidden" name="table_name" value="<?= $more_products_folder; ?>">
                             <input type="hidden" name="product_id" value="<?= $more_products['id']; ?>">
                             <br>

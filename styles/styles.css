@@ -10,7 +10,7 @@
 a {
     color: #777;
     text-decoration: none;
-}
+} 
 
 .display {
     visibility: hidden;
@@ -588,6 +588,11 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
     width: 15rem;
 } 
 
+.view-products-wrapper .view-products-inner div span big,
+.view-products-wrapper .view-products-inner div p big {
+    font-size: 2rem;
+}
+
 .view-products-wrapper .view-products-inner div p button {
     background: #222;
     border: none;
@@ -701,7 +706,8 @@ ul {
 
 .view-products-wrapper .view-products-inner div p {
     font-size: small;
-    margin-block: 1rem;
+    line-height: 1.3rem;
+    margin: 1rem 0 3rem;
 }
 
 @media (max-width: 1583px) {
