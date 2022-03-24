@@ -44,7 +44,6 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
     <div class="view-products-wrapper">
         <div class="view-products-inner">
             <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $view_product_result['0']['images']; ?>)"></div>
-            <form action="view-products.php" method="post"> 
                 <div>
                     <h2><?= $view_product_result['0']['name_of_product']; ?></h2>
                     <br>
@@ -52,7 +51,6 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
                     <p><big><?= $view_product_result['0']['price']; ?></big></p>
                     <p><button>Continue Shopping</button></p>
                 </div>
-            </form>
         </div>
     </div>
 
