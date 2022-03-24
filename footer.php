@@ -8,7 +8,7 @@
 
             <br><br>
             <br><br>
-            <p>TheUltimateDoors © 2022. All Rights Reserved.</p>
+            <p>TheUltimateDoorsNCabinets © 2022. All Rights Reserved.</p>
         </div>
         <div>
             <h2>Tags</h2>
@@ -30,9 +30,9 @@
             <br> 
             <p>ONE RIVERWAY <br>  777 SOUTH POST OAK LANE <br> HOUSTON, TX 77056</p>
             <br>
-            <h4>Phone</h4>
+            <h4>Toll Free Number</h4>
             <br> 
-            <p> +5166733208 <br>  +8327743563 </p>
+            <p> 1800 909 8413 </p>
         </div>
         <div>
             <h2>Email</h2>

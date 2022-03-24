@@ -221,10 +221,9 @@
                             <img src="images/call.png">
                         </div>
                         <div>
-                            <p>Give us a call</p>
-                            <a href="tel:+5166733208">+5166733208</a>
-                            <br>
-                            <a href="tel:+8327743563">+8327743563</a>
+                            <p>Toll Free Number</p>
+                            <span>1800 909 8413</span>
+                            <br> 
                         </div>
                     </div>
                     <div class="sec-5-inner-sub">

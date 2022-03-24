@@ -574,7 +574,7 @@ section.sec-5 .sec-5-inner .sec-5-inner-sub div p {
 }
 
 .supplies-wrapper .supplies .supplies-content {
-    box-shadow: 1px 2px 19px #ddd;
+    box-shadow: 1px 2px 19px #eee;
     border-radius: 1rem;
     padding-bottom: 3rem;
     margin-block: 1rem;
@@ -818,6 +818,17 @@ ul {
 
     .supplies-wrapper .supplies-categories div img { 
         transform: translate(1rem,.7rem);
+    }
+}
+
+@media (max-width: 550px) {
+    .supplies-wrapper .supplies .supplies-content {
+        box-shadow: unset;
+    }
+
+    .supplies-wrapper .supplies .supplies-content div {
+        height: 10rem;
+        width: 10rem;
     }
 }
 
