@@ -475,6 +475,7 @@ section.sec-4 .sec-4-inner div {
 }
    
 section.sec-4 .sec-4-inner div h2 {
+    border-bottom: 3px solid #ff00009e;
     font-family: arial;
     font-size: xxx-large;
 }
