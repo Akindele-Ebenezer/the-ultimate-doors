@@ -446,8 +446,12 @@ section.sec-3 .sec-3-inner label {
 }
 
 section.sec-3 .sec-3-inner h1,
-section.sec-5 .sec-5-inner div h1 {
+section.sec-5 .sec-5-inner div h1,
+.recommended-products-title h2,
+.more-products-title h2 {
     border-bottom: 3px solid #ff00009e;
+    text-decoration: overline; 
+    text-decoration-style: dashed;
 }
 
 section.sec-4 {

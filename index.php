@@ -269,7 +269,7 @@
                 <div>
                     <h2>Interiors That Inspire</h2>
                     <p>All Front and Entrance doors, Iron Steel or Hard Core Wooden Sliding Doors,  Custom-made to fit. <br><br> Fire Rated Door of all Grades and Specification.. <br> Interior Doors and many more, <br> based in Houston and US.</p>
-                    <p>MORE ABOUT US --></p>
+                    <a href="#supplies">CHECKOUT ultimate doors available</a> 
                 </div>
             </div>
         </section>
