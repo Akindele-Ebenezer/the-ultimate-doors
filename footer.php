@@ -37,7 +37,7 @@
         <div>
             <h2>Email</h2>
             <br>
-            <p><a href="mailto:theultimatedoors@gmail.com">theultimatedoors@gmail.com</a></p>
+            <p><a href="mailto:info@ultimatedoorsncabinets.com">info@ultimatedoorsncabinets.com</a></p>
 
             <div>
                 <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
