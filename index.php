@@ -304,7 +304,7 @@
                         </div>
                         <div>
                             <p>Send us an email</p>
-                            <a href="mailto:theultimatedoors">theultimatedoors@gmail.com</a>
+                            <a href="mailto:theultimatedoors@gmail.com">theultimatedoors@gmail.com</a>
                         </div>
                     </div>
                     <div class="sec-5-inner-sub">
