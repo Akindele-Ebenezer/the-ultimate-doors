@@ -49,6 +49,18 @@
 </main>
 
 <script src="scripts/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+    let typed = new Typed(".auto-type-services", {
+        strings: ['Interior Front Doors', 'Custom Made Doors', 'Iron Doors', 'Wooden Doors', 'Fire Rated Doors', 'Swing Doors', 'Commercial Doors'],
+        typeSpeed: 150,
+        ackSpeed: 150,
+        loop: true
+    });
+
+</script>
 
 </body>
 </html>

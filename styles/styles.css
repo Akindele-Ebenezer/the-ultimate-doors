@@ -12,6 +12,19 @@ a {
     text-decoration: none;
 } 
 
+.auto-type {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-family: papyrus;
+}
+
+.auto-type span {
+    font-weight: bold;
+    color: #ffff00c4;
+    font-family: arial;
+}
+
 .display {
     visibility: hidden;
 }

@@ -29,6 +29,9 @@
                     <h1>THE ULTIMATE DOORS</h1> 
                     <p>AND CABINETS</p>
                     <center><a href="#bookings"><button>BOOK ONLINE</button></a></center>
+
+                    <p class="auto-type">We Provide <span class="auto-type-services"></span></p> 
+
                 </div>
             </div>
         </section> 
