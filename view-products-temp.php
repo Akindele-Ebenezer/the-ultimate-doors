@@ -61,7 +61,7 @@
                 <br> 
                 <p> <?= $view_product_result['0']['content']; ?></p> 
                 <span><big><?= $view_product_result['0']['price']; ?></big></span>
-                <p><button>Continue Shopping</button></p>
+                <p><a><button>Continue Shopping</button></a></p>
             </div>
         </div>
     </div>

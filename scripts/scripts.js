@@ -48,3 +48,6 @@ for (let i = 0; i < navUlChildren.length; i++) {
 
 }   
 
+let continueShippingButton = document.querySelector('.view-products-wrapper .view-products-inner div p a'); 
+
+continueShippingButton.setAttribute('href', 'https://www.ultimatedoorsncabinets.com/#recommended-products'); 

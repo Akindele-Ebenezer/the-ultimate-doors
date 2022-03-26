@@ -36,7 +36,7 @@
             </div>
         </section> 
 
-        <div class="recommended-products-title"><h2>Recommended Products</h2></div>
+        <div class="recommended-products-title" id="recommended-products"><h2>Recommended Products</h2></div>
 
         <div class="recommended-products-wrapper">
         <div class="recommended-products-inner">

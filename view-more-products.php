@@ -49,7 +49,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
                     <br>
                     <p><?= $view_product_result['0']['content']; ?></p> 
                     <p><big><?= $view_product_result['0']['price']; ?></big></p>
-                    <p><button>Continue Shopping</button></p>
+                    <p><a><button>Continue Shopping</button></a></p>
                 </div>
         </div>
     </div>
