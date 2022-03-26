@@ -42,6 +42,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
 ?>
 
     <div class="view-products-wrapper">
+        <h4 class="name-of-product-sm-screen"><?= $view_product_result['0']['name_of_product']; ?></h4>
         <div class="view-products-inner">
             <div style="background-image: url(images/<?= $recommended_products_folder . '/' . $view_product_result['0']['images']; ?>)"></div>
                 <div>

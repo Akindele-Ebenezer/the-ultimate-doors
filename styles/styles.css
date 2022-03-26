@@ -714,6 +714,12 @@ ul {
     justify-content: space-evenly;
 }
 
+.view-products-wrapper .name-of-product-sm-screen {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+}
+
 .view-products-wrapper .view-products-inner div:first-child { 
     background-size: contain;
     background-repeat: no-repeat;
@@ -768,6 +774,12 @@ ul {
         padding: 5rem 0;
     } */
     
+}
+
+@media (max-width: 862px) {
+    .view-products-wrapper .name-of-product-sm-screen {
+        display: block; 
+    }
 }
 
 @media (min-width: 810px) {
