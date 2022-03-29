@@ -48,7 +48,7 @@ if(isset($_POST['more_products_submit']) || isset($_POST['recommended_products_s
                 <div>
                     <h2><?= $view_product_result['0']['name_of_product']; ?></h2>
                     <br>
-                    <p><?= $view_product_result['0']['content']; ?></p> 
+                    <p><?= str_replace('US Door & More', '<strong>Ultimate Doors N Cabinets</strong>', $view_product_result['0']['content']); ?></p> 
                     <p><big><?= $view_product_result['0']['price']; ?></big></p>
                     <p><a><button>Continue Shopping</button></a></p>
                 </div>

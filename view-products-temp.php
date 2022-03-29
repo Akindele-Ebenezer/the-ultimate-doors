@@ -60,7 +60,7 @@
             <div>
                 <h2><?= $view_product_result['0']['name_of_product']; ?></h2>
                 <br> 
-                <p> <?= $view_product_result['0']['content']; ?></p> 
+                <p> <?= str_replace('US Door & More', '<strong>Ultimate Doors N Cabinets</strong>', $view_product_result['0']['content']); ?></p> 
                 <span><big><?= $view_product_result['0']['price']; ?></big></span>
                 <p><a><button>Continue Shopping</button></a></p>
             </div>
