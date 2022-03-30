@@ -12,6 +12,18 @@ a {
     text-decoration: none;
 } 
 
+.alert {
+    background: #fff;
+    color: green;
+    display: flex;
+    display: none;
+    justify-content: center;
+    padding: 1.5rem;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+}
+
 .auto-type {
     text-align: center;
     margin-top: 4rem;
