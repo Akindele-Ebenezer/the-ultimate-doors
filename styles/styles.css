@@ -125,7 +125,7 @@ nav div img,
 .nav-toggle img {
     background: #dfdf4d63;
     cursor: pointer;
-    margin-inline: 1rem;
+    margin-left: 4rem;
     padding: .5rem;
     width: 2.5rem;
     transform: translateY(1.5rem);
@@ -145,7 +145,8 @@ nav div:last-child {
 }
 
 nav div .logo-sub span {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    font-style: initial;
     font-weight: bold;
     margin-left: .2rem;
 }
@@ -166,11 +167,7 @@ nav div p {
 nav div p small a {
     visibility: hidden;
 }
-
-nav div strong {
-    margin-inline: .5rem;
-}
-
+  
 .nav-toggle {
     align-items: center;
     background: #555;
@@ -349,6 +346,15 @@ section.sec-1 .sec-1-inner p {
     font-style: italic;
     transform: translateY(-1rem);
   }
+
+  
+section.sec-1 .sec-1-inner p span {
+    font-family: arial;
+    font-size: 2rem;
+    font-style: initial;
+    font-weight: bold;
+    margin-left: .3rem;
+}
 
 section.sec-1-sub {
     align-items: center;

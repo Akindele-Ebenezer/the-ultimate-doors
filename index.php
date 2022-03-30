@@ -27,7 +27,7 @@
                 <div>
                     <h4>SERVICE YOU CAN TRUST</h4>
                     <h1>THE ULTIMATE DOORS</h1> 
-                    <p>AND CABINETS</p>
+                    <p>AND <span>CABINETS</span></p>
                     <center><a href="#bookings"><button>BOOK ONLINE</button></a></center>
 
                     <p class="auto-type">We Provide <span class="auto-type-services"></span></p> 
