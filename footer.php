@@ -4,7 +4,7 @@
             <h2></h2>
             <h1>THE ULTIMATE DOORS</h1>
             <br>
-            <p>All Front and Entrance doors, Icon Steel or Hard Core Wooden Sliding Doors,  Custom-made to fit. <br><br> Fire Rated Door of all Grades and Specification.. <br> Interior Doors and many more, <br> based in Houston and US.</p>
+            <p>All Front and Entrance doors, Iron Steel or Hard Core Wooden Sliding Doors,  Custom-made to fit. <br><br> Fire Rated Door of all Grades and Specification.. <br> Interior Doors and many more, <br> based in Houston and US.</p>
 
             <br><br>
             <br><br>
