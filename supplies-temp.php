@@ -48,6 +48,7 @@
             <h2>Categories</h2>
             <ul> 
                 <li><a href="interior-front-doors.php"><img src="images/right-arrow.png"> Interior Front Doors </a> </li>
+                <li><a href="cabinets.php"><img src="images/right-arrow.png"> Cabinets</a></li>
                 <li><a href="custom-made-doors.php"><img src="images/right-arrow.png"> Custom Made Doors</a> </li>
                 <li><a href="iron-doors.php"><img src="images/right-arrow.png"> Iron Doors</a> </li>
                 <li><a href="wooden-doors.php"><img src="images/right-arrow.png"> Wooden Doors</a> </li>

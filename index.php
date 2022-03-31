@@ -127,6 +127,16 @@
                             </div>
                         </div>
                 </a> 
+                <a href="cabinets.php"> 
+                        <div class="door">
+                            <div>
+                                <img src="images/cabinet.png">
+                            </div>
+                            <div>
+                                Cabinets
+                            </div>
+                        </div>
+                </a> 
                 <a href="custom-made-doors.php">
                     <div class="door">
                         <div>

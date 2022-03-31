@@ -15,6 +15,7 @@
             <br>
             <ul>
                 <li><a href="interior-front-doors.php">Interior Front Door</a></li>
+                <li><a href="cabinets.php">Cabinets</a></li>
                 <li><a href="custom-made-doors.php">Custom Made Doors</a></li>
                 <li><a href="iron-doors.php">Iron Doors</a></li>
                 <li><a href="wooden-doors.php">Wooden Doors</a></li>
