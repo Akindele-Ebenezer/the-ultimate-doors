@@ -9,14 +9,11 @@
 
     require 'vendor/autoload.php';
 
-    if(isset($_POST['book_now'])) {
+    if(isset($_POST['send_message'])) {
         
-        $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
-        $origin_location = mysqli_real_escape_string($conn, $_POST['origin_location']);
-        $destination = mysqli_real_escape_string($conn, $_POST['destination']);
-        $pickup_date = mysqli_real_escape_string($conn, $_POST['pickup_date']);
-        $pickup_time = mysqli_real_escape_string($conn, $_POST['pickup_time']);
+        $message_full_name = htmlspecialchars($_POST['message_full_name']);
+        $message_email = htmlspecialchars($_POST['message_email']);
+        $message = htmlspecialchars($_POST['message']); 
         
         try {
         
@@ -33,13 +30,13 @@
             $mail->Port       = 587;                                     
         
             
-            $mail->setFrom("$email", "$full_name");
+            $mail->setFrom("$message_email", "$message_full_name");
             $mail->addAddress('info@ultimatedoorsncabinets.com', 'Ultimate Doors');  
         
             
             $mail->isHTML(true);                                   
-            $mail->Subject = 'New Booking - ULTIMATE DOORS N CABINETS';
-            $mail->Body    = "Full Name - $full_name <br> Email - $email <br> Origin Location - $origin_location <br> Destination Location - $destination <br> Delivery Date - $pickup_date <br> Delivery Time - $pickup_time"; 
+            $mail->Subject = 'New Message - ULTIMATE DOORS N CABINETS';
+            $mail->Body    = "Full Name - $message_full_name <br> Email - $message_email <br><br> Message - $message"; 
         
             $mail->send();
             $mail_feedback = 'Message has been sent. Someone from our team will reply you within 24hrs.'; 
@@ -52,7 +49,7 @@
 ?>
 
     <div class="mail-feedback">
-        <center><h1>Thanks, <?= $full_name; ?></h1></center>
+        <center><h1>Thanks, <?= $message_full_name; ?></h1></center>
         <br><br>
         <center><p><?= $mail_feedback; ?></p></center>
         <br><br>

@@ -290,7 +290,7 @@
         <section class="sec-5" id="contact">
             <div class="sec-5-inner">
                 <div>
-                    <form action="" method="post">
+                    <form action="message.php" method="post">
                         <h1>Send us a message</h1>
                         <div>
                             <input type="text" name="message_full_name" placeholder="Full Name..."> <br>
