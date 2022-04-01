@@ -1,55 +1,4 @@
 <?php
-
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
-// use PHPMailer\PHPMailer\Exception;
-
-// require 'vendor/autoload.php';
-
-// if(isset($_POST['book_now'])) {
-    
-//     $full_name = $_POST['full_name'];
-//     $email = $_POST['email'];
-//     $origin_location = $_POST['origin_location'];
-//     $destination = $_POST['destination'];
-//     $pickup_date = $_POST['pickup_date'];
-//     $pickup_time = $_POST['pickup_time'];
-      
-//     try {
-    
-         
-//         $mail = new PHPMailer(true);
-         
-//         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                       
-//         $mail->isSMTP();                                             
-//         $mail->Host       = 'smtp.zoho.com';                      
-//         $mail->SMTPAuth   = true;                                    
-//         $mail->Username   = 'info@ultimatedoorsncabinets.com';                      
-//         $mail->Password   = 'Ultimatedoors1*';                                
-//         $mail->SMTPSecure = 'tls';             
-//         $mail->Port       = 587;                                     
-    
-         
-//         $mail->setFrom("$email", "$full_name");
-//         $mail->addAddress('info@ultimatedoorsncabinets.com', 'Ultimate Doors');  
-    
-         
-//         $mail->isHTML(true);                                   
-//         $mail->Subject = 'New Booking - ULTIMATE DOORS N CABINETS';
-//         $mail->Body    = 'This is the message body';
-//         // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    
-//         $mail->send();
-//         echo '<div class="alert">
-//                 <div>Message has been sent</div>
-//               </div>';
-//     } catch (Exception $e) {
-//         echo '<div class="alert">
-//                 <div>Message could not be sent. Please, try again...</div>
-//               </div>';
-//     }
- 
-// }
  
     $page_title = "THE ULTIMATE DOORS";
     include "header.php";
@@ -296,7 +245,7 @@
 
         <section class="sec-3" style="background-image: url('images/bg.jpg')" id="bookings">
             <div class="sec-3-inner">
-                <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+                <form action="mail.php" method="post">
                     <h1>BOOK NOW</h1>
                     <div class="sec-3-input">
                         <div>

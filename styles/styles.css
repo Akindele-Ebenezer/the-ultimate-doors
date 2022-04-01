@@ -91,6 +91,10 @@ main div.main-inner {
     overflow: hidden;
 }
 
+.mail-feedback {
+    padding: 10rem 2rem;
+}
+
 .more-products-wrapper,
 .recommended-products-wrapper {
     padding: 2rem;
