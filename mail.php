@@ -1,6 +1,6 @@
 <?php
 
-    $page_title = 'Message Sent';
+    $page_title = 'Booked Successfully';
     include 'header.php';
 
     use PHPMailer\PHPMailer\PHPMailer;
