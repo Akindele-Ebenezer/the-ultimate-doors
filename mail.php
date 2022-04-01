@@ -33,7 +33,7 @@
             $mail->Port       = 587;                                     
         
             
-            $mail->setFrom("$email", "$full_name");
+            $mail->setFrom("$mail->Username", "$full_name");
             $mail->addAddress('info@ultimatedoorsncabinets.com', 'Ultimate Doors');  
         
             
