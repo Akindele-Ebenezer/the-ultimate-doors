@@ -1,5 +1,8 @@
 <?php
 
+    $page_title = 'Message Sent';
+    include 'header.php';
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
@@ -8,12 +11,12 @@
 
     if(isset($_POST['book_now'])) {
         
-        $full_name = $_POST['full_name'];
-        $email = $_POST['email'];
-        $origin_location = $_POST['origin_location'];
-        $destination = $_POST['destination'];
-        $pickup_date = $_POST['pickup_date'];
-        $pickup_time = $_POST['pickup_time'];
+        $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);
+        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $origin_location = mysqli_real_escape_string($conn, $_POST['origin_location']);
+        $destination = mysqli_real_escape_string($conn, $_POST['destination']);
+        $pickup_date = mysqli_real_escape_string($conn, $_POST['pickup_date']);
+        $pickup_time = mysqli_real_escape_string($conn, $_POST['pickup_time']);
         
         try {
         
@@ -45,8 +48,6 @@
         }
     
     }
-
-    include 'header.php';
 
 ?>
 
