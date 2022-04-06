@@ -32,7 +32,7 @@
     </ul>
 </div>
 <nav>
-    <a href="https://www.ultimatedoorsncabinets.com">
+    <a href="https://www.ultimatedoorsncabinets.com" style="color: unset">
         <div>
             <h2></h2>
             <h1>THE ULTIMATE DOORS</h1>
@@ -45,11 +45,13 @@
     </div>  
 </nav>  
 <div class="nav-sm-screen">
-    <div>
-        <h2></h2>
-        <h1>THE ULTIMATE DOORS</h1>
-        <div class="logo-sub-sm-screen">AND CABINETS</div>
-    </div>
+    <a href="https://www.ultimatedoorsncabinets.com" style="color: unset">
+        <div>
+            <h2></h2>
+            <h1>THE ULTIMATE DOORS</h1>
+            <div class="logo-sub-sm-screen">AND CABINETS</div>
+        </div>
+    </a>
     <div>
         <img src="images/nav-icon.png">
     </div>
