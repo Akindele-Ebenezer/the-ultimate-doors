@@ -32,7 +32,7 @@
     </ul>
 </div>
 <nav>
-    <a href="index.php">
+    <a href="https://www.ultimatedoorsncabinets.com">
         <div>
             <h2></h2>
             <h1>THE ULTIMATE DOORS</h1>
