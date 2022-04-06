@@ -33,7 +33,7 @@
             <br>
             <h4>Toll Free Number</h4>
             <br> 
-            <p> 1800 909 8413 </p>
+            <p> 1 800 909 8413 </p>
         </div>
         <div>
             <h2>Email</h2>

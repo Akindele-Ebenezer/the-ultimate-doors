@@ -307,7 +307,7 @@
                         </div>
                         <div>
                             <p>Toll Free Number</p>
-                            <span>1800 909 8413</span>
+                            <span>1 800 909 8413</span>
                             <br> 
                         </div>
                     </div>
@@ -331,11 +331,11 @@
                     </div>
                     <div class="sec-5-inner-sub">
                         <div>
-                            <img src="images/whatsapp.png">
+                            <img src="images/ig.png">
                         </div>
                         <div>
-                            <p>Whatsapp</p>
-                            <a href="#">DM on whatsapp</a>
+                            <p>Instagram</p>
+                            <a href="#">DM on Instagram</a>
                         </div>
                     </div>
                     <div class="sec-5-inner-sub">
